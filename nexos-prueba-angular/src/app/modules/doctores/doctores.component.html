@@ -1,0 +1,35 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Numeroc</th>
+                <th scope="col">Hospital</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Especialidad</th>
+                <!-- <th scope="col">Paciente</th> -->
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of doctoresList;">                
+                <td>{{item.DoctorNumCred}}</td>
+                <td>{{item.DoctorHopital}}</td>
+                <td>{{item.DoctorNombre}}</td>
+                <td>{{item.DoctorApellido}}</td>
+                <td>{{item.DoctorEspecialidad}}</td>
+                <!-- <td>{{item.DoctorCita}}</td> -->
+                <!-- <td>
+                    <button 
+                        type="button" class="btn btn-light-mr-1" 
+                        (click)="editPaciente(item.PacienteID)"                       
+                        ><i class="fa fa-pencil"></i></button>
+                    <button 
+                        type="button" class="btn btn-light-mr-1"><i class="fa fa-trash"></i>
+                    </button>                    
+                </td> -->
+            </tr>            
+        </tbody>
+    </table>
+    
+</div>
